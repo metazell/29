@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h1>Welcome to the DJ Playlist App!</h1>
+    <p>This is your one-stop solution for managing your music playlists.</p>
+    <div class="row">
+      <div class="col">
+        <a href="{{ url_for('show_all_playlists') }}" class="btn btn-primary btn-lg">View All Playlists</a>
+      </div>
+      <div class="col">
+        <a href="{{ url_for('show_all_songs') }}" class="btn btn-secondary btn-lg">View All Songs</a>
+      </div>
+      <div class="col">
+        <a href="{{ url_for('add_playlist') }}" class="btn btn-success btn-lg">Add New Playlist</a>
+      </div>
+      <div class="col">
+        <a href="{{ url_for('add_song') }}" class="btn btn-info btn-lg">Add New Song</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+<!-- form to create new playlist -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Create a new playlist</h1>
+
+<form method="POST">
+  {{ form.hidden_tag() }}
+  <div class="form-group">
+    {{ form.name.label(class="form-control-label") }}
+    {{ form.name(class="form-control form-control-lg") }}
+  </div>
+  <div class="form-group">
+    {{ form.description.label(class="form-control-label") }}
+    {{ form.description(class="form-control form-control-lg") }}
+  </div>
+  <div class="form-group">
+    {{ form.submit(class="btn btn-primary btn-lg") }}
+  </div>
+</form>
+{% endblock %}

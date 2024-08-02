@@ -1,26 +1,8 @@
 # Ignore virtual environment directory
+# Virtual environment directories
 venv/
-
-# Ignore Python bytecode files
-*.pyc
-__pycache__/
-
-# Ignore database files
-*.db
-
-# Ignore environment variable files
-.env
-
-# Ignore log files
-*.log
-
-# Ignore compiled files
-*.o
-*.so
-*.out
-
-# Ignore IDE-specific files
-.vscode/
-.idea/
+env/
+.venv/
+.env/
 
 
